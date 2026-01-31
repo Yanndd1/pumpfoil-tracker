@@ -1,4 +1,4 @@
-# Pumpfoil Tracker 🌊🏄
+# Pumpfoil Tracker
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue.svg)](https://www.typescriptlang.org/)
@@ -11,12 +11,12 @@
 
 ## Fonctionnalités
 
-- 🔄 **Synchronisation Strava** - Import automatique des activités de type "Surf"
-- 📊 **Détection des tours** - Algorithme intelligent qui détecte les phases de pump
-- 📈 **Statistiques détaillées** - Durée, distance, vitesse, fréquence cardiaque
-- 🏆 **Focus sur le meilleur tour** - Analyse détaillée du tour le plus long
-- 📱 **PWA** - Installable sur mobile, fonctionne hors-ligne
-- ⚙️ **Paramètres ajustables** - Personnalisez les seuils de détection
+-  **Synchronisation Strava** - Import automatique des activités de type "Surf"
+-  **Détection des tours** - Algorithme intelligent qui détecte les phases de pump
+-  **Statistiques détaillées** - Durée, distance, vitesse, fréquence cardiaque
+-  **Focus sur le meilleur tour** - Analyse détaillée du tour le plus long
+-  **PWA** - Installable sur mobile, fonctionne hors-ligne
+-  **Paramètres ajustables** - Personnalisez les seuils de détection
 
 ## Captures d'écran
 
@@ -190,10 +190,6 @@ Les contributions sont les bienvenues ! Voici comment participer :
 ## Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
-## Auteur
-
-**Yann** - *Créateur* - Passionné de pumpfoil en Provence 🌊
 
 ---
 
