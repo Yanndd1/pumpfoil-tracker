@@ -5,7 +5,7 @@
 [![React](https://img.shields.io/badge/React-18.3-61dafb.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.0-646cff.svg)](https://vitejs.dev/)
 
-**Pumpfoil Tracker** est une application web Progressive (PWA) pour suivre et analyser vos sessions de pumpfoil. Elle se connecte à Strava pour importer automatiquement vos activités de surf et détecter vos tours de pump.
+**Pumpfoil Tracker** est une application web Progressive (PWA) pour suivre et analyser vos sessions de pumpfoil. Elle se connecte à Strava pour importer automatiquement vos activités de pumpfoil (à classer dans la catégorie surf) et détecter vos tours de pump.
 
 ![Dashboard Screenshot](docs/screenshots/dashboard.png)
 
