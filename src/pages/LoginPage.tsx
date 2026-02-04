@@ -82,7 +82,7 @@ const LoginPage: React.FC = () => {
         </button>
 
         <p className="mt-6 text-ocean-200 text-sm">
-          Nous recherchons vos sessions Pumpfoil enregistrées comme Kitesurf sur Strava
+          Nous recherchons vos sessions Pumpfoil enregistrées comme Surf sur Strava
         </p>
       </div>
 
