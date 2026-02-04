@@ -20,6 +20,7 @@ import StatCard from '../components/ui/StatCard';
 import RunCard from '../components/ui/RunCard';
 import Loading from '../components/ui/Loading';
 import SessionSpeedChart from '../components/charts/SessionSpeedChart';
+import { SessionMap } from '../components/maps';
 import { formatDuration, formatDistance } from '../utils/runDetection';
 import { PumpRun } from '../types';
 
@@ -263,6 +264,15 @@ const SessionDetailPage: React.FC = () => {
           </div>
         )}
 
+        {/* Session Map */}
+        {session.rawData?.latlng && session.rawData.latlng.length > 0 && (
+          <SessionMap
+            session={session}
+            selectedRun={selectedRun}
+            onSelectRun={setSelectedRun}
+          />
+        )}
+
         {/* Speed Chart */}
         <SessionSpeedChart
           session={session}
@@ -287,6 +297,7 @@ const SessionDetailPage: React.FC = () => {
                 onClick={() =>
                   setSelectedRun(selectedRun?.id === run.id ? null : run)
                 }
+                latlng={session.rawData?.latlng}
               />
             ))}
           </div>

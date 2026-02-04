@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Waves, Activity, TrendingUp, Target, Heart } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
@@ -14,7 +15,7 @@ const LoginPage: React.FC = () => {
     {
       icon: Target,
       title: 'Détection des tours',
-      description: "Analyse automatique de chaque tour de pump",
+      description: "Analyse automatique avec des règles mathématiques",
     },
     {
       icon: TrendingUp,
@@ -81,13 +82,34 @@ const LoginPage: React.FC = () => {
         </button>
 
         <p className="mt-6 text-ocean-200 text-sm">
-          Connectez-vous pour accéder à vos activités
+          Nous recherchons vos sessions Pumpfoil enregistrées comme Kitesurf sur Strava
         </p>
       </div>
 
       {/* Footer */}
-      <footer className="text-center py-4 text-ocean-200 text-sm">
-        <p>Compatible avec votre Garmin Fenix 7 via Strava</p>
+      <footer className="text-center py-4 space-y-3">
+        <p className="text-ocean-200 text-sm">Compatible avec les montres Garmin via Strava</p>
+        <div className="flex items-center justify-center gap-4">
+          <Link
+            to="/privacy"
+            className="text-ocean-200 hover:text-white text-sm underline transition-colors"
+          >
+            Politique de confidentialité
+          </Link>
+          <span className="text-ocean-300">|</span>
+          <a
+            href="https://www.strava.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-ocean-200 hover:text-white text-sm transition-colors"
+          >
+            <img
+              src="/strava-powered-by.svg"
+              alt="Powered by Strava"
+              className="h-5"
+            />
+          </a>
+        </div>
       </footer>
     </div>
   );
